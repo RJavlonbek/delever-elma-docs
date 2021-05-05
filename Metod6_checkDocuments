@@ -1,5 +1,4 @@
-ELMA to DELEVER
-Get order details
+ELMA to Delever
 
 Request:
 {
@@ -10,7 +9,16 @@ Request:
     "Action":"Logistics",
     "Method":"updateOrderStatus",
     "MessageContent":{
-        "order_id": "order ID in ELMA"
+        "order_id": "order ID in ELMA",
+        "doc_files":[{
+            "document_name": "string",
+            "files": [{
+                "approved": true,
+                "document_url": "string",
+                "name": "string"
+            }],
+            "comment": "Scan need to be redone"
+        }]
     },
     "ErrorMessage":"",
     "Success":"1",
@@ -26,7 +34,7 @@ Response:
     "Action":"Logistics",
     "Method":"createOrder",
     "MessageContent":{
-        "code": 0,
+        "code": 201,
         "data": {
             "branch_id": "string",
             "category_id": "string",
@@ -80,7 +88,7 @@ Response:
             ],
             "updated_at": "string"
         },
-        "message": "string"
+        "message": "files has been checked"
     },
     "ErrorMessage":"",
     "Success":"1",

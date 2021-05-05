@@ -3,13 +3,14 @@ Delever to ELMA
 Request to change delivey date [Delever to ELMA]
 Request
 {
+    "InstanceID":293004,
     "Action":"Logistics",
     "Method":"assignedCourier",
     "ErrorMessage":"",
     "MessageContent":{
-        "date": "string (‘2006-01-02T00:00:00Z’)"
-        "from_time": "string (‘2006-01-02T15:04:05Z’)"
-        "to_time": "string (‘2006-01-02T15:04:05Z’)"
+        "date": "2006-01-02T00:00:00Z"
+        "from_time": "2006-01-02T15:04:05Z"
+        "to_time": "2006-01-02T15:04:05Z"
         "order_id": "order ID in ELMA"
     },
     "Success":"1",

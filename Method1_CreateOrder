@@ -10,6 +10,7 @@ Request:
   "Method":"createOrder",
   "MessageContent":{
     "id": "order ID in ELMA",
+    "instance_id": "Process ID in ELMA (InstanceID)",
     "customer_address": "Xosiyat-1, 32-uy",
     "customer_location": {
         "lat": 41.279285,
@@ -42,6 +43,7 @@ Response:
     "message":"order is being created",
     "data":{
         "id": "order ID in ELMA",
+        "instance_id": "Process ID in ELMA (InstanceID)",
         "customer_address": "Xosiyat-1, 32-uy",
         "customer_location": {
             "lat": 41.279285,

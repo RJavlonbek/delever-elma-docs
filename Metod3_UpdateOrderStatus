@@ -3,6 +3,7 @@ Update Order Status Method
 1. Delever to ELMA
 Request:
 {
+    "InstanceID":293004,
     "Action":"Logistics",
     "Method":"updateOrderStatus",
     "ErrorMessage":"",
