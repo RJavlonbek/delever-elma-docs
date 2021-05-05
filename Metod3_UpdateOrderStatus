@@ -1,0 +1,59 @@
+Update Order Status Method
+
+1. Delever to ELMA
+Request:
+{
+    "Action":"Logistics",
+    "Method":"updateOrderStatus",
+    "ErrorMessage":"",
+    "MessageContent":{
+        "order_id": "order ID in ELMA",
+        "status": "status key",
+        "comment": "some note"
+    },
+    "Success":"1",
+    "MessageType":"DataResponse",
+    "RetryRequestId":""
+}
+
+
+2. ELMA to Delever
+Request:
+{
+    "TransactionID":1111,
+    "TransactionRequestID":1111,
+    "InstanceID":293004,
+    "MessageType":"DataRequest",
+    "Action":"Logistics",
+    "Method":"updateOrderStatus",
+    "MessageContent":{
+        "order_id": "order ID in ELMA",
+        "status": "status key",
+        "comment": "some note"
+    },
+    "ErrorMessage":"",
+    "Success":"1",
+    "RetryRequestId":""
+}
+
+Response:
+{
+    "TransactionID":1111,
+    "TransactionRequestID":1111,
+    "InstanceID":293004,
+    "MessageType":"DataResponse",
+    "Action":"Logistics",
+    "Method":"createOrder",
+    "MessageContent":{
+        "code":201,
+        "message":"order is being created",
+        "data":{
+            "order_id": "order ID in ELMA",
+            "status": "status key",
+            "comment": "some note"
+        }
+    },
+    "ErrorMessage":"",
+    "Success":"1",
+    "RetryRequestId":""
+}

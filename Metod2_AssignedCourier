@@ -1,0 +1,40 @@
+Delever to ELMA
+
+Courier Assigned [Delever to ELMA]
+Request
+{
+    "Action":"Logistics",
+    "Method":"assignedCourier",
+    "ErrorMessage":"",
+    "MessageContent":{
+        "courier": {
+            "address": "string",
+            "branch_id": "string",
+            "created_at": "string",
+            "district_id": "string",
+            "id": "string",
+            "image": "string",
+            "location": {
+            "lat": 0,
+            "long": 0
+            },
+            "name": "string",
+            "phone": "string",
+            "region_id": "string",
+            "timetable": [
+            {
+                "day": 0,
+                "from_time": "string",
+                "to_time": "string"
+            }
+            ],
+            "updated_at": "string",
+            "vehicle_model": "string",
+            "vehicle_number": "string"
+        },
+        "order_id": "order ID in ELMA"
+    },
+    "Success":"1",
+    "MessageType":"DataResponse",
+    "RetryRequestId":""
+}

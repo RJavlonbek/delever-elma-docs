@@ -1,0 +1,62 @@
+ELMA to Delever
+
+Request:
+{
+  "TransactionID":1111,
+  "TransactionRequestID":1111,
+  "InstanceID":293004,
+  "MessageType":"DataRequest",
+  "Action":"Logistics",
+  "Method":"createOrder",
+  "MessageContent":{
+    "id": "order ID in ELMA",
+    "customer_address": "Xosiyat-1, 32-uy",
+    "customer_location": {
+        "lat": 41.279285,
+        "long": 69.3440333
+    },
+    "customer_name": "Javlonbek Rakhimberdiev",
+    "customer_phone": "+998995541475",
+    "delivery_day": "2021-05-26",
+    "from_time": "2021-05-26T14:00:38.6133Z",
+    "to_time": "2021-05-26T16:00:38.6133Z",
+    "note": "this request is from ELMA ))",
+    "product": "universal product ID in ELMA"
+  },
+  "ErrorMessage":"",
+  "Success":"1",
+  "RetryRequestId":""
+}
+
+
+Response: 
+{
+  "TransactionID":1111,
+  "TransactionRequestID":1111,
+  "InstanceID":293004,
+  "MessageType":"DataResponse",
+  "Action":"Logistics",
+  "Method":"createOrder",
+  "MessageContent":{
+    "code":201,
+    "message":"order is being created",
+    "data":{
+        "id": "order ID in ELMA",
+        "customer_address": "Xosiyat-1, 32-uy",
+        "customer_location": {
+            "lat": 41.279285,
+            "long": 69.3440333
+        },
+        "customer_name": "Javlonbek Rakhimberdiev",
+        "customer_phone": "+998995541475",
+        "delivery_day": "2021-05-26",
+        "from_time": "2021-05-26T14:00:38.6133Z",
+        "to_time": "2021-05-26T16:00:38.6133Z",
+        "note": "this request is from ELMA ))",
+        "product": "universal product ID in ELMA"
+    }
+  },
+  "ErrorMessage":"",
+  "Success":"1",
+  "RetryRequestId":""
+}

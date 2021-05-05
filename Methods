@@ -1,0 +1,70 @@
+1. Getting products/services from Delever [ELMA to Delever]
+Universal product id will be used in both side
+
+2. Create order [ELMA to Delever] 
+Elma order id will be used as PK
+https://admin.api.anor.udevs.io/swagger/index.html#/order/create-order-elma
+
+3. Assigned courier [Delever to ELMA]
+struct:
+{
+courier_id: string
+order_id: string
+from_time: string (‘2006-01-02T15:04:05Z’)
+to_time: string (‘2006-01-02T15:04:05Z’)
+}
+
+courier info by its id: https://admin.api.anor.udevs.io/swagger/index.html#/courier/get-courier-by-id
+
+4. Request to change delivery date [Delever to ELMA]
+{
+order_id: string
+date: string (‘2006-01-02T00:00:00Z’)
+from_time: string (‘2006-01-02T15:04:05Z’)
+to_time: string (‘2006-01-02T15:04:05Z’)
+}
+
+5. Changed delivery date [ELMA to Delever]
+In case of change of delivery date and time, order will be canceled and new order will be created from ELMA side with new delivery date and time
+
+5.1 https://admin.api.anor.udevs.io/swagger/index.html#/order-processing/update-order-status
+status_id = 'cancelled'
+comment = 'reason of change and date'
+
+5.2 Create new order
+https://admin.api.anor.udevs.io/swagger/index.html#/order/create-order-elma
+
+6. Sending pictures/files [Delever to ELMA]
+Get all info about order by its id
+https://admin.api.anor.udevs.io/swagger/index.html#/order/get-order-by-id
+
+6.1 Validate files
+If there is any file in a document that is not okay approved flag stays as ‘false’ other ways all of them marked as ‘approved’: ’true’
+https://admin.api.anor.udevs.io/swagger/index.html#/order-file/update-order-file
+
+6. 3 Document change from ELMA
+If there is any doc that does not meet requirements, then status_id of that order changed back to ‘arrived’ in order to rescan the broken documents
+
+https://admin.api.anor.udevs.io/swagger/index.html#/order-processing/update-order-status
+status_id = 'arrived'
+comment = ‘some comment if necessary'
+
+6. 4 Download files by their url after all docs meets requirements
+
+7 Confirmation [ELMA to Delever]
+https://admin.api.anor.udevs.io/swagger/index.html#/order-processing/update-order-status
+status_id =  'finished'
+comment = ‘some comment if necessary'
+
+
+status(id, name) : [
+('new', 'Новый'),
+('pending', 'В ожидании'),
+('assigned', 'Назначенный'),
+('in_progres', 'В процессе'),
+('on_the_way', 'В пути'),
+('arrived', 'прибыл'),
+('delivered', 'Доставлен'),
+('finished', 'Законченный'),
+('cancelled', 'Отменено');
+]

@@ -1,0 +1,11 @@
+status(id, name) : [
+    ('new', 'Новый'),
+    ('pending', 'В ожидании'),
+    ('assigned', 'Назначенный'),
+    ('in_progres', 'В процессе'),
+    ('on_the_way', 'В пути'),
+    ('arrived', 'прибыл'),
+    ('delivered', 'Доставлен'),
+    ('finished', 'Законченный'),
+    ('cancelled', 'Отменено');
+]
