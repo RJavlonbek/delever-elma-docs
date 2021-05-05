@@ -1,0 +1,90 @@
+ELMA to DELEVER
+Get order details
+
+Request:
+{
+    "TransactionID":1111,
+    "TransactionRequestID":1111,
+    "InstanceID":293004,
+    "MessageType":"DataRequest",
+    "Action":"Logistics",
+    "Method":"updateOrderStatus",
+    "MessageContent":{
+        "order_id": "order ID in ELMA"
+    },
+    "ErrorMessage":"",
+    "Success":"1",
+    "RetryRequestId":""
+}
+
+Response:
+{
+    "TransactionID":1111,
+    "TransactionRequestID":1111,
+    "InstanceID":293004,
+    "MessageType":"DataResponse",
+    "Action":"Logistics",
+    "Method":"createOrder",
+    "MessageContent":{
+        "code": 0,
+        "data": {
+            "branch_id": "string",
+            "category_id": "string",
+            "courier_id": "string",
+            "created_at": "string",
+            "customer_address": "string",
+            "customer_location": {
+                "lat": 0,
+                "long": 0
+            },
+            "customer_name": "string",
+            "customer_phone": "string",
+            "delivery_day": "string",
+            "doc_files": [
+            {
+                "created_at": "string",
+                "document_name": "string",
+                "files": [
+                {
+                    "approved": true,
+                    "document_url": "string",
+                    "name": "string"
+                }
+                ],
+                "order_id": "string",
+                "updated_at": "string"
+            }
+            ],
+            "from_time": "string",
+            "to_time": "string",
+            "geozone_id": "string",
+            "id": "Order ID in ELMA",
+            "note": "string",
+            "product": {
+                "category": "string",
+                "created_at": "string",
+                "docs": [{
+
+                }],
+                "id": "string",
+                "name": "string",
+                "order_number": 0,
+                "status": 0,
+                "updated_at": "string"
+            },
+            "status_id": "string",
+            "status_logs": [
+            {
+                "comment": "string",
+                "created_at": "string",
+                "status_id": "string"
+            }
+            ],
+            "updated_at": "string"
+        },
+        "message": "string"
+    },
+    "ErrorMessage":"",
+    "Success":"1",
+    "RetryRequestId":""
+}
