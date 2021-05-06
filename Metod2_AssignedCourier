@@ -5,7 +5,7 @@ Request
 {
     "InstanceID":293004,
     "Action":"Logistics",
-    "Method":"assignedCourier",
+    "Method":"assignCourier",
     "ErrorMessage":"",
     "MessageContent":{
         "courier": {

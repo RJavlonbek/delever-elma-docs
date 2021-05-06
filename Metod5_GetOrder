@@ -8,7 +8,7 @@ Request:
     "InstanceID":293004,
     "MessageType":"DataRequest",
     "Action":"Logistics",
-    "Method":"updateOrderStatus",
+    "Method":"getOrder",
     "MessageContent":{
         "order_id": "order ID in ELMA"
     },
@@ -24,7 +24,7 @@ Response:
     "InstanceID":293004,
     "MessageType":"DataResponse",
     "Action":"Logistics",
-    "Method":"createOrder",
+    "Method":"getOrder",
     "MessageContent":{
         "code": 0,
         "data": {
