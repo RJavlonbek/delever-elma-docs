@@ -4,34 +4,19 @@ Request to change delivey date [Delever to ELMA]
 
 Request api to belt
 {
-    "instanceId": 293004,
-    "action": "Logistics",
-    "method": "changeDelivaryDate",
-    "server": "Talant",
-    "messageContent": {
-        "date": "2006-01-02T00:00:00Z",
-        "from_time": "2006-01-02T15:04:05Z",
-        "to_time": "2006-01-02T15:04:05Z",
-        "order_id": "c8dfb71a-e5d2-463f-8c4f-4ee1eba4bf66"
-    }
-}
-
-
-Responce to deliver from belt
-{
-    "status": "ok",
-    "data": {
-        "action": "Logistics",
-        "method": "changeDelivaryDate",
-        "server": "Talant",
-        "instanceId": 293004,
-        "messageContent": {
-            "date": "2006-01-02T00:00:00Z",
-            "from_time": "2006-01-02T15:04:05Z",
-            "to_time": "2006-01-02T15:04:05Z",
-            "order_id": "c8dfb71a-e5d2-463f-8c4f-4ee1eba4bf66"
-        }
-    }
+    "InstanceID":293004,
+    "Action":"Logistics",
+    "Method":"assignedCourier",
+    "ErrorMessage":"",
+    "MessageContent":{
+        "date": "2006-01-02T00:00:00Z"
+        "from_time": "2006-01-02T15:04:05Z"
+        "to_time": "2006-01-02T15:04:05Z"
+        "order_id": "order ID in ELMA"
+    },
+    "Success":"1",
+    "MessageType":"DataResponse",
+    "RetryRequestId":""
 }
 
 

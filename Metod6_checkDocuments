@@ -7,7 +7,7 @@ Request:
     "InstanceID":293004,
     "MessageType":"DataRequest",
     "Action":"Logistics",
-    "Method":"checkDocuments",
+    "Method":"updateOrderStatus",
     "MessageContent":{
         "order_id": "order ID in ELMA",
         "doc_files":[{
@@ -32,7 +32,7 @@ Response:
     "InstanceID":293004,
     "MessageType":"DataResponse",
     "Action":"Logistics",
-    "Method":"checkDocuments",
+    "Method":"createOrder",
     "MessageContent":{
         "code": 201,
         "data": {
