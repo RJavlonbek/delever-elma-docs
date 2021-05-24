@@ -4,7 +4,6 @@
     <list default="true" id="f0adbf4f-0820-4c76-b877-16ee73f3546a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/Method1_CreateOrder" beforeDir="false" afterPath="$PROJECT_DIR$/Method1_CreateOrder" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Metod3_UpdateOrderStatus" beforeDir="false" afterPath="$PROJECT_DIR$/Metod3_UpdateOrderStatus" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Metod5_GetOrder" beforeDir="false" afterPath="$PROJECT_DIR$/Metod5_GetOrder" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +49,7 @@
       <workItem from="1621249200175" duration="59000" />
       <workItem from="1621316002700" duration="4561000" />
       <workItem from="1621486033313" duration="8000" />
-      <workItem from="1621834345347" duration="1377000" />
+      <workItem from="1621834345347" duration="2339000" />
     </task>
     <servers />
   </component>

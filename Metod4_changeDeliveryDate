@@ -6,7 +6,7 @@ Request api to belt
 {
     "InstanceID":293004,
     "Action":"Logistics",
-    "Method":"assignedCourier",
+    "Method":"changeDelivaryDate",
     "ErrorMessage":"",
     "MessageContent":{
         "date": "2006-01-02T00:00:00Z"
