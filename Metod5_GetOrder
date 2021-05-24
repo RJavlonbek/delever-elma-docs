@@ -3,21 +3,19 @@ Get order details
 
 Request:
 {
-    "TransactionID": 1111,
-    "TransactionRequestID": 1111,
-    "InstanceID": 293004,
-    "MessageType": "DataRequest",
-    "Action": "Logistics",
-    "Method": "getOrder",
-    "MessageContent": {
-        "order_id": "1f0bab9f-a4c5-465b-ade2-099537cd033d"
+    "TransactionID":1111,
+    "TransactionRequestID":1111,
+    "InstanceID":293004,
+    "MessageType":"DataRequest",
+    "Action":"Logistics",
+    "Method":"getOrder",
+    "MessageContent":{
+        "order_id": "order ID in ELMA"
     },
-    "ErrorMessage": "",
-    "Success": "1",
-    "RetryRequestId": ""
+    "ErrorMessage":"",
+    "Success":"1",
+    "RetryRequestId":""
 }
-
-
 
 Response:
 {
@@ -26,7 +24,7 @@ Response:
     "InstanceID":293004,
     "MessageType":"DataResponse",
     "Action":"Logistics",
-    "Method":"createOrder",
+    "Method":"getOrder",
     "MessageContent":{
         "code": 0,
         "data": {
