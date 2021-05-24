@@ -44,10 +44,10 @@ Response:
     "InstanceID":293004,
     "MessageType":"DataResponse",
     "Action":"Logistics",
-    "Method":"createOrder",
+    "Method":"updateOrderStatus",
     "MessageContent":{
         "code":201,
-        "message":"order is being created",
+        "message":"order is being updated",
         "data":{
             "order_id": "order ID in ELMA",
             "status": "status key",

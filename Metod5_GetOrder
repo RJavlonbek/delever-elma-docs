@@ -21,195 +21,70 @@ Request:
 
 Response:
 {
-    "TransactionID": 1111,
-    "TransactionRequestID": 1111,
-    "InstanceID": 293004,
-    "MessageType": "DataResponse",
-    "Action": "Logistics",
-    "Method": "getOrder",
-    "MessageContent": {
-        "code": 200,
-        "message": "ok",
+    "TransactionID":1111,
+    "TransactionRequestID":1111,
+    "InstanceID":293004,
+    "MessageType":"DataResponse",
+    "Action":"Logistics",
+    "Method":"createOrder",
+    "MessageContent":{
+        "code": 0,
         "data": {
-            "id": "1f0bab9f-a4c5-465b-ade2-099537cd033d",
-            "customer_name": "Фывывцвцув",
-            "customer_phone": "+998492493930",
-            "customer_address": "аваываываываыва",
+            "branch_id": "string",
+            "category_id": "string",
+            "courier_id": "string",
+            "created_at": "string",
+            "customer_address": "string",
             "customer_location": {
-                "lat": 41.31693639916141,
-                "long": 69.27388561078983
+                "lat": 0,
+                "long": 0
             },
-            "delivery_day": "2021-05-08T00:00:00Z",
-            "from_time": "2021-05-08T00:16:00Z",
-            "to_time": "2021-05-08T04:04:00Z",
-            "branch_id": "a13fea71-86d6-4b83-abef-d531ea6258ff",
-            "geozone_id": "b5cdde25-c042-4713-9c3b-4f0cafb8e37b",
-            "courier_id": "25e8f65c-fb7d-447e-861d-96990300a198",
-            "category_id": "",
-            "status_id": "arrived",
-            "note": "Прибыли",
-            "doc_files": [
+            "customer_name": "string",
+            "customer_phone": "string",
+            "delivery_day": "string",
+            "doc_files": [{
+                "created_at": "string",
+                "document_name": "string",
+                "files": [
                 {
-                    "order_id": "1f0bab9f-a4c5-465b-ade2-099537cd033d",
-                    "product_id": "",
-                    "document_name": "client\/1f0bab9f-a4c5-465b-ade2-099537cd033d\/dcea7c17-f829-44fd-8ef0-49c80e8e2948+32501996500017.jpg",
-                    "files": null,
-                    "created_at": "2021-05-07T03:47:41.908441Z",
-                    "updated_at": "2021-05-07T03:47:41.908441Z"
-                },
-                {
-                    "order_id": "1f0bab9f-a4c5-465b-ade2-099537cd033d",
-                    "product_id": "",
-                    "document_name": "client\/1f0bab9f-a4c5-465b-ade2-099537cd033d\/77933494-fce6-468c-b332-f5d288a11499+2021-05-07T08:47:56.453422.png",
-                    "files": null,
-                    "created_at": "2021-05-07T03:47:59.231177Z",
-                    "updated_at": "2021-05-07T03:47:59.231177Z"
+                    "approved": true,
+                    "document_url": "string",
+                    "name": "string"
                 }
-            ],
+                ],
+                "order_id": "string",
+                "updated_at": "string"
+            }],
+            "from_time": "string",
+            "to_time": "string",
+            "geozone_id": "string",
+            "id": "Order ID in ELMA",
+            "note": "string",
+            "product": {
+                "category": "string",
+                "created_at": "string",
+                "docs": [{
+
+                }],
+                "id": "string",
+                "name": "string",
+                "order_number": 0,
+                "status": 0,
+                "updated_at": "string"
+            },
+            "status_id": "string",
             "status_logs": [
-                {
-                    "status_id": "arrived",
-                    "comment": "Прибыли",
-                    "created_at": "2021-05-07T03:46:29.400091Z"
-                },
-                {
-                    "status_id": "assigned",
-                    "comment": "",
-                    "created_at": "2021-05-07T03:44:50.137359Z"
-                },
-                {
-                    "status_id": "in_progres",
-                    "comment": "Прибыли",
-                    "created_at": "2021-05-07T03:46:16.906366Z"
-                },
-                {
-                    "status_id": "new",
-                    "comment": "",
-                    "created_at": "2021-05-07T03:44:39.742795Z"
-                },
-                {
-                    "status_id": "on_the_way",
-                    "comment": "В пути",
-                    "created_at": "2021-05-07T03:46:24.924714Z"
-                }
+            {
+                "comment": "string",
+                "created_at": "string",
+                "status_id": "string"
+            }
             ],
-            "products": [
-                {
-                    "id": "d5516b24-08fe-4365-bef0-8d76e6026d1a",
-                    "name": "Credit card",
-                    "docs": [
-                        {
-                            "created_at": "2021-05-03T15:22:20.483896Z",
-                            "id": "a2711529-bd63-4708-a17c-455605116349",
-                            "index": 0,
-                            "name": "Passport",
-                            "rule": {
-                                "action": {
-                                    "copy": false,
-                                    "original": false,
-                                    "photo": true,
-                                    "scan": true,
-                                    "signature": false
-                                },
-                                "from": "client",
-                                "img_url": "",
-                                "pages": 1,
-                                "to": "bank"
-                            },
-                            "updated_at": "2021-05-03T15:22:20.483896Z"
-                        },
-                        {
-                            "created_at": "2021-05-03T15:20:28.202245Z",
-                            "id": "6d9c37ce-b55b-450d-958f-b174755a2571",
-                            "index": 1,
-                            "name": "Shartnoma",
-                            "rule": {
-                                "action": {
-                                    "copy": false,
-                                    "original": true,
-                                    "photo": false,
-                                    "scan": true,
-                                    "signature": true
-                                },
-                                "from": "bank",
-                                "img_url": "",
-                                "pages": 2,
-                                "to": "client"
-                            },
-                            "updated_at": "2021-05-03T15:20:28.202245Z"
-                        }
-                    ],
-                    "order_number": 0,
-                    "status": 0,
-                    "category_id": "28914162-0741-484e-9aa5-6197bfe090f9",
-                    "created_at": "2021-05-03T15:23:51.45941Z",
-                    "updated_at": "2021-05-03T15:26:21.566162Z"
-                },
-                {
-                    "id": "eb9b8257-9ef7-4d32-a9c5-96978fe52f63",
-                    "name": "Быстрый микрозайм",
-                    "docs": [
-                        {
-                            "created_at": "2021-04-27T05:09:51.399334Z",
-                            "id": "6992d0bc-c297-45ca-8e01-687d545dd2f4",
-                            "index": 0,
-                            "name": "John Doe",
-                            "rule": {
-                                "action": {
-                                    "copy": true,
-                                    "original": true,
-                                    "photo": true,
-                                    "scan": true,
-                                    "signature": true
-                                },
-                                "from": "bank",
-                                "to": "bank"
-                            },
-                            "updated_at": "2021-04-27T05:09:51.399334Z"
-                        }
-                    ],
-                    "order_number": 0,
-                    "status": 0,
-                    "category_id": "28914162-0741-484e-9aa5-6197bfe090f9",
-                    "created_at": "2021-04-13T06:54:31.607966Z",
-                    "updated_at": "2021-04-28T07:54:31.332603Z"
-                },
-                {
-                    "id": "5b9d8ec1-f523-4b26-a8af-418ab1a1f5c7",
-                    "name": "Дебетовая карта Uzcard",
-                    "docs": [
-                        {
-                            "created_at": "2021-04-27T05:09:51.399334Z",
-                            "id": "6992d0bc-c297-45ca-8e01-687d545dd2f4",
-                            "index": 0,
-                            "name": "John Doe",
-                            "rule": {
-                                "action": {
-                                    "copy": true,
-                                    "original": true,
-                                    "photo": true,
-                                    "scan": true,
-                                    "signature": true
-                                },
-                                "from": "bank",
-                                "to": "bank"
-                            },
-                            "updated_at": "2021-04-27T05:09:51.399334Z"
-                        }
-                    ],
-                    "order_number": 0,
-                    "status": 0,
-                    "category_id": "28914162-0741-484e-9aa5-6197bfe090f9",
-                    "created_at": "2021-04-13T06:54:24.123167Z",
-                    "updated_at": "2021-04-28T07:54:45.257939Z"
-                }
-            ],
-            "is_rejected_by_elma": false,
-            "created_at": "2021-05-07T03:44:39.742795Z",
-            "updated_at": "2021-05-07T03:46:29.400091Z"
-        }
+            "updated_at": "string"
+        },
+        "message": "string"
     },
-    "ErrorMessage": "",
-    "Success": "1",
-    "RetryRequestId": ""
+    "ErrorMessage":"",
+    "Success":"1",
+    "RetryRequestId":""
 }
