@@ -7,5 +7,7 @@ status(id, name) : [
     ('arrived', 'прибыл'),
     ('delivered', 'Доставлен'),
     ('finished', 'Законченный'),
+    ('rejected', 'Отклоненный'),
+    ('cancelled_no_return', 'Отменено (больше не будут заказаны)'),
     ('cancelled', 'Отменено');
 ]
