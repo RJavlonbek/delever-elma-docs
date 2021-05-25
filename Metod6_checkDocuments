@@ -9,17 +9,15 @@ Request:
     "Action":"Logistics",
     "Method":"checkDocuments",
     "MessageContent":{
-        "order_id": "order ID in ELMA",
-        "doc_files":[{
-            "document_name": "string",
-            "files": [{
-                "approved": true,
-                "document_url": "string",
-                "name": "string"
-            }],
-            "comment": "Scan need to be redone"
-        }]
-    },
+          "approved": true,
+          "document_id": "string",
+          "document_name": "string",
+          "file_name": "string",
+          "file_url": "string",
+          "order_id": "string",
+          "page_number": 0,
+          "product_id": "string"
+        },
     "ErrorMessage":"",
     "Success":"1",
     "RetryRequestId":""
@@ -42,52 +40,64 @@ Response:
             "created_at": "string",
             "customer_address": "string",
             "customer_location": {
-                "lat": 0,
-                "long": 0
+              "lat": 0,
+              "long": 0
             },
             "customer_name": "string",
             "customer_phone": "string",
             "delivery_day": "string",
-            "doc_files": [{
+            "doc_files": [
+              {
+                "approved": true,
                 "created_at": "string",
+                "document_id": "string",
                 "document_name": "string",
-                "files": [
-                {
-                    "approved": true,
-                    "document_url": "string",
-                    "name": "string"
-                }
-                ],
+                "file_name": "string",
+                "file_url": "string",
                 "order_id": "string",
+                "page_number": 0,
+                "product_id": "string",
                 "updated_at": "string"
-            }],
+              }
+            ],
             "from_time": "string",
-            "to_time": "string",
             "geozone_id": "string",
-            "id": "Order ID in ELMA",
+            "id": "string",
+            "is_rejected_by_elma": true,
             "note": "string",
             "product": {
-                "category": "string",
-                "created_at": "string",
-                "docs": [{
-
-                }],
-                "id": "string",
-                "name": "string",
-                "order_number": 0,
-                "status": 0,
-                "updated_at": "string"
+              "category_id": "string",
+              "created_at": "string",
+              "docs": [
+                {
+                  "created_at": "string",
+                  "from": "string",
+                  "id": "string",
+                  "img_url": "string",
+                  "name": "string",
+                  "pages": 0,
+                  "rule": {},
+                  "to": "string",
+                  "updated_at": "string"
+                }
+              ],
+              "id": "string",
+              "name": "string",
+              "order_number": 0,
+              "status": 0,
+              "updated_at": "string"
             },
             "status_id": "string",
             "status_logs": [
-            {
+              {
                 "comment": "string",
                 "created_at": "string",
                 "status_id": "string"
-            }
+              }
             ],
+            "to_time": "string",
             "updated_at": "string"
-        },
+          },
         "message": "files has been checked"
     },
     "ErrorMessage":"",
