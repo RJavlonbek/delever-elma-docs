@@ -8,7 +8,7 @@ Request:
     "MessageType":"DataRequest",
     "Action":"Logistics",
     "Method":"checkDocuments",
-    "MessageContent":{
+    "MessageContent":[{
           "approved": true,
           "document_id": "string",
           "document_name": "string",
@@ -17,7 +17,7 @@ Request:
           "order_id": "string",
           "page_number": 0,
           "product_id": "string"
-        },
+        }],
     "ErrorMessage":"",
     "Success":"1",
     "RetryRequestId":""
@@ -33,71 +33,16 @@ Response:
     "Method":"checkDocuments",
     "MessageContent":{
         "code": 201,
-        "data": {
-            "branch_id": "string",
-            "category_id": "string",
-            "courier_id": "string",
-            "created_at": "string",
-            "customer_address": "string",
-            "customer_location": {
-              "lat": 0,
-              "long": 0
-            },
-            "customer_name": "string",
-            "customer_phone": "string",
-            "delivery_day": "string",
-            "doc_files": [
-              {
-                "approved": true,
-                "created_at": "string",
-                "document_id": "string",
-                "document_name": "string",
-                "file_name": "string",
-                "file_url": "string",
-                "order_id": "string",
-                "page_number": 0,
-                "product_id": "string",
-                "updated_at": "string"
-              }
-            ],
-            "from_time": "string",
-            "geozone_id": "string",
-            "id": "string",
-            "is_rejected_by_elma": true,
-            "note": "string",
-            "product": {
-              "category_id": "string",
-              "created_at": "string",
-              "docs": [
-                {
-                  "created_at": "string",
-                  "from": "string",
-                  "id": "string",
-                  "img_url": "string",
-                  "name": "string",
-                  "pages": 0,
-                  "rule": {},
-                  "to": "string",
-                  "updated_at": "string"
-                }
-              ],
-              "id": "string",
-              "name": "string",
-              "order_number": 0,
-              "status": 0,
-              "updated_at": "string"
-            },
-            "status_id": "string",
-            "status_logs": [
-              {
-                "comment": "string",
-                "created_at": "string",
-                "status_id": "string"
-              }
-            ],
-            "to_time": "string",
-            "updated_at": "string"
-          },
+        "data": [{
+          "approved": true,
+          "document_id": "string",
+          "document_name": "string",
+          "file_name": "string",
+          "file_url": "string",
+          "order_id": "string",
+          "page_number": 0,
+          "product_id": "string"
+        }],
         "message": "files has been checked"
     },
     "ErrorMessage":"",
