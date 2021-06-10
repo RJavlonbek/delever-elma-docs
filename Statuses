@@ -9,5 +9,6 @@ status(id, name) : [
     ('finished', 'Законченный'),
     ('rejected', 'Отклоненный'),
     ('cancelled_no_return', 'Отменено (больше не будут заказаны)'),
+    ('cancelled_change_date', 'Дата заказа изменена'),
     ('cancelled', 'Отменено');
 ]
